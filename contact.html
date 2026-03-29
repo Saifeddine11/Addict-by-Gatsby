@@ -49,28 +49,18 @@
 
     .logo {
       display: flex;
-      flex-direction: column;
-      line-height: 1;
+      align-items: center;
       text-decoration: none;
       flex-shrink: 0;
+      border: none;
+      outline: none;
     }
 
-    .logo__main {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 600;
-      font-size: 17px;
-      letter-spacing: 4px;
-      color: #f0ede8;
-      text-transform: uppercase;
-    }
-
-    .logo__sub {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 9px;
-      color: #c9a96e;
-      margin-top: -1px;
+    .logo__img {
+      height: 36px;
+      width: auto;
+      display: block;
+      object-fit: contain;
     }
 
     .navbar__btns {
@@ -232,24 +222,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto;
-      gap: 8px;
+      gap: 6px;
     }
 
     .photo-grid__item {
       overflow: hidden;
       border-radius: 4px;
       background: #111;
-    }
-
-    /* Large item spans full width (left column, 2 rows) */
-    .photo-grid__item--large {
-      grid-column: 1 / 2;
-      grid-row: 1 / 3;
-      aspect-ratio: 3 / 4;
-    }
-
-    .photo-grid__item--sm {
-      grid-column: 2 / 3;
       aspect-ratio: 1 / 1;
     }
 
@@ -358,14 +337,8 @@
         white-space: nowrap;
       }
 
-      .logo__main {
-        font-size: 28px;
-        letter-spacing: 8px;
-      }
-
-      .logo__sub {
-        font-size: 12px;
-        margin-top: 0;
+      .logo__img {
+        height: 48px;
       }
 
       .navbar__btns { gap: 8px; }
@@ -378,7 +351,7 @@
 
       /* Hero */
       .hero {
-        padding-top: 100px;
+        padding-top: 120px;
       }
 
       .hero__img-wrap {
@@ -421,17 +394,13 @@
 
       /* Photo grid */
       .photo-grid {
-        max-width: 900px;
+        max-width: 1100px;
         margin: 0 auto;
         padding: 0 40px 64px;
-        gap: 12px;
+        gap: 10px;
       }
 
-      .photo-grid__item--large {
-        aspect-ratio: 2 / 3;
-      }
-
-      .photo-grid__item--sm {
+      .photo-grid__item {
         aspect-ratio: 4 / 3;
       }
 
@@ -482,13 +451,8 @@
         padding: 12px 12px 12px 44px;
       }
 
-      .logo__main {
-        font-size: 32px;
-        letter-spacing: 10px;
-      }
-
-      .logo__sub {
-        font-size: 13px;
+      .logo__img {
+        height: 54px;
       }
 
       .pill-btn {
@@ -506,9 +470,9 @@
       }
 
       .photo-grid {
-        max-width: 1100px;
+        max-width: 1200px;
         padding: 0 80px 80px;
-        gap: 16px;
+        gap: 12px;
       }
 
       .addresses {
@@ -530,8 +494,7 @@
   <!-- ===== NAVBAR (same as index) ===== -->
   <nav class="navbar" aria-label="Navigation principale">
     <a href="index.html" class="logo" aria-label="Addict by Vivy - Accueil">
-      <span class="logo__main">ADDICT</span>
-      <span class="logo__sub">by Vivy</span>
+      <img src="assets/logo.png" alt="Addict by Gatsby" class="logo__img">
     </a>
     <div class="navbar__btns">
       <a href="menu.html" class="pill-btn">Menu</a>
@@ -593,31 +556,23 @@
     </table>
   </section>
 
-  <!-- ===== PHOTO GRID ===== -->
+  <!-- ===== PHOTO GRID 2×2 ===== -->
   <section class="photo-grid" aria-label="Galerie photos">
-    <!-- Large left image -->
-    <div class="photo-grid__item photo-grid__item--large">
-      <img
-        src="assets/contact/gallery-1.jpg"
-        alt="Cocktails Addict by Vivy"
-        onerror="this.style.background='#141f1a'; this.removeAttribute('src')"
-      >
+    <div class="photo-grid__item">
+      <img src="assets/gallery/photo-1.jpg" alt="Cocktails et chicha Addict by Gatsby"
+        onerror="this.style.background='#141f1a'; this.removeAttribute('src')">
     </div>
-    <!-- Top right -->
-    <div class="photo-grid__item photo-grid__item--sm">
-      <img
-        src="assets/contact/gallery-2.jpg"
-        alt="Ambiance lounge"
-        onerror="this.style.background='#1a2e23'; this.removeAttribute('src')"
-      >
+    <div class="photo-grid__item">
+      <img src="assets/gallery/photo-2.jpg" alt="Salon lounge Addict by Gatsby"
+        onerror="this.style.background='#1a2e23'; this.removeAttribute('src')">
     </div>
-    <!-- Bottom right -->
-    <div class="photo-grid__item photo-grid__item--sm">
-      <img
-        src="assets/contact/gallery-3.jpg"
-        alt="Sushis et tapas"
-        onerror="this.style.background='#0f1e16'; this.removeAttribute('src')"
-      >
+    <div class="photo-grid__item">
+      <img src="assets/gallery/photo-3.jpg" alt="Façade Addict by Gatsby"
+        onerror="this.style.background='#0f1e16'; this.removeAttribute('src')">
+    </div>
+    <div class="photo-grid__item">
+      <img src="assets/gallery/photo-4.jpg" alt="Chichas et cocktails Addict by Gatsby"
+        onerror="this.style.background='#162418'; this.removeAttribute('src')">
     </div>
   </section>
 

@@ -1,6 +1,6 @@
-# Addict by Vivy — Site Web
+# Addict by Gatsby — Site Web
 
-Site vitrine luxe pour le lounge bar & restaurant **Addict by Vivy** (Marrakech & Bruxelles).
+Site vitrine luxe pour le lounge bar & restaurant **Addict by Gatsby** (Marrakech & Bruxelles).
 
 ## Structure
 

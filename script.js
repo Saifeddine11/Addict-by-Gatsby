@@ -1,5 +1,5 @@
 /* ============================================
-   ADDICT BY VIVY — JavaScript
+   ADDICT by Gatsby — JavaScript
    Navigation, scroll, menu filter, form, security
    ============================================ */
 
@@ -307,7 +307,7 @@
     // Console warning
     if (typeof console !== 'undefined') {
       console.log(
-        '%c⚠ Addict by Vivy',
+        '%c⚠ Addict by Gatsby',
         'color: #c9a96e; font-size: 20px; font-weight: bold;'
       );
       console.log(

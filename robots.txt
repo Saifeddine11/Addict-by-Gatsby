@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://addictbyvivy.com/sitemap.xml
+Sitemap: https://addictbyGatsby.com/sitemap.xml
