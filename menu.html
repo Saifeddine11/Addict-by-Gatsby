@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu Addict by Vivy — Découvrez nos chichas premium, signature rolls, sushi et cocktails d'exception.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="robots" content="index, follow">
+  <title>Menu — Addict by Vivy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; script-src 'self' 'unsafe-inline';">
+</head>
+<body>
+  <!-- Navigation — Pill navbar -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <a href="index.html" class="nav__logo" aria-label="Addict by Vivy - Accueil">
+      <span class="logo-main">ADDICT</span>
+      <span class="logo-sub">by Vivy</span>
+    </a>
+    <div class="nav__btns">
+      <a href="menu.html" class="nav__pill-btn">Menu</a>
+      <a href="contact.html" class="nav__pill-btn">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Menu Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/hero/menu-hero.jpg" alt="" loading="eager" aria-hidden="true">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="page-hero__content">
+      <span class="section-tag">Saveurs d'exception</span>
+      <h1 class="page-hero__title">Notre Menu</h1>
+    </div>
+  </section>
+
+  <!-- Menu Categories Navigation -->
+  <div class="menu-nav" role="tablist" aria-label="Catégories du menu">
+    <button class="menu-nav__btn active" data-category="all" role="tab" aria-selected="true">Tout</button>
+    <button class="menu-nav__btn" data-category="chichas" role="tab" aria-selected="false">Chichas</button>
+    <button class="menu-nav__btn" data-category="rolls" role="tab" aria-selected="false">Signature Rolls</button>
+    <button class="menu-nav__btn" data-category="nigiri" role="tab" aria-selected="false">Nigiri Sushi</button>
+    <button class="menu-nav__btn" data-category="cocktails" role="tab" aria-selected="false">Cocktails</button>
+    <button class="menu-nav__btn" data-category="boissons" role="tab" aria-selected="false">Boissons</button>
+  </div>
+
+  <!-- Menu Items -->
+  <section class="menu-section">
+    <div class="container">
+
+      <!-- Chichas -->
+      <div class="menu-category" data-category="chichas">
+        <div class="menu-category__header">
+          <span class="menu-category__icon">✦</span>
+          <h2>Nos Chichas</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/chichas/chicha-1.jpg" alt="Chicha Classic" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Classic</h3>
+                <span class="menu-item__price">150 MAD</span>
+              </div>
+              <p>Nos saveurs classiques : menthe, pomme, raisin, pastèque. Le choix intemporel.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/chichas/chicha-2.jpg" alt="Chicha Premium" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Premium</h3>
+                <span class="menu-item__price">200 MAD</span>
+              </div>
+              <p>Mélanges exclusifs : Love 66, Blue Mist, Ice Grape Mint. Des saveurs qui surprennent.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/chichas/chicha-3.jpg" alt="Chicha Signature" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Signature Vivy</h3>
+                <span class="menu-item__price">250 MAD</span>
+              </div>
+              <p>Notre création maison : un mélange secret aux notes fruitées et glacées.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Signature Rolls -->
+      <div class="menu-category" data-category="rolls">
+        <div class="menu-category__header">
+          <span class="menu-category__icon">✦</span>
+          <h2>Signature Rolls</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/rolls/dragon.jpg" alt="Dragon Roll" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Dragon Roll</h3>
+                <span class="menu-item__price">$37</span>
+              </div>
+              <p>Tobiko, oignons verts en garniture, topped avec avocat finement tranché et sauce eel.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/rolls/rainbow.jpg" alt="Rainbow Roll" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Rainbow Roll</h3>
+                <span class="menu-item__price">$32</span>
+              </div>
+              <p>Crabe, avocat et concombre au cœur. Un arc-en-ciel de saveurs marines.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/rolls/shrimp.jpg" alt="Shrimpin' Ain't Easy" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Shrimpin' Ain't Easy</h3>
+                <span class="menu-item__price">$14</span>
+              </div>
+              <p>Wrap inside-out, tempura shrimp, avocat, asperges, sauce BOSS et sésame.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/rolls/california.jpg" alt="California Roll" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>California</h3>
+                <span class="menu-item__price">$17</span>
+              </div>
+              <p>Inside-out seaweed, crabstick, avocat, concombre et graines de sésame.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Nigiri -->
+      <div class="menu-category" data-category="nigiri">
+        <div class="menu-category__header">
+          <span class="menu-category__icon">✦</span>
+          <h2>Nigiri Sushi</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/nigiri/salmon.jpg" alt="Nigiri Saumon" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Saumon</h3>
+                <span class="menu-item__price">$12</span>
+              </div>
+              <p>Saumon frais sur riz vinaigré. Le classique japonais dans sa plus pure expression.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/nigiri/tuna.jpg" alt="Nigiri Thon" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Thon</h3>
+                <span class="menu-item__price">$14</span>
+              </div>
+              <p>Thon rouge de qualité sashimi, posé délicatement sur un lit de riz assaisonné.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/nigiri/ebi.jpg" alt="Nigiri Ebi" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Ebi (Crevette)</h3>
+                <span class="menu-item__price">$10</span>
+              </div>
+              <p>Crevette butterflied parfaitement cuite sur riz vinaigré. Doux et délicat.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Cocktails -->
+      <div class="menu-category" data-category="cocktails">
+        <div class="menu-category__header">
+          <span class="menu-category__icon">✦</span>
+          <h2>Cocktails</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/cocktails/cocktail-1.jpg" alt="Addict Sunset" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Addict Sunset</h3>
+                <span class="menu-item__price">90 MAD</span>
+              </div>
+              <p>Vodka, jus de passion, sirop de grenadine, jus d'orange. Notre signature.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/cocktails/cocktail-2.jpg" alt="Vivy's Mojito" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Vivy's Mojito</h3>
+                <span class="menu-item__price">85 MAD</span>
+              </div>
+              <p>Rhum blanc, menthe fraîche, citron vert, sucre de canne. Revisité à notre façon.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__img">
+              <img src="assets/menu/cocktails/cocktail-3.jpg" alt="Emerald Sour" loading="lazy" width="400" height="300">
+            </div>
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Emerald Sour</h3>
+                <span class="menu-item__price">95 MAD</span>
+              </div>
+              <p>Gin, liqueur de melon, citron, blanc d'œuf. Un cocktail vert émeraude captivant.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="menu-category" data-category="boissons">
+        <div class="menu-category__header">
+          <span class="menu-category__icon">✦</span>
+          <h2>Boissons</h2>
+        </div>
+        <div class="menu-grid menu-grid--list">
+          <article class="menu-item menu-item--simple">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Eau minérale</h3>
+                <span class="menu-item__price">25 MAD</span>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item menu-item--simple">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Soft drinks</h3>
+                <span class="menu-item__price">35 MAD</span>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item menu-item--simple">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Jus frais</h3>
+                <span class="menu-item__price">45 MAD</span>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item menu-item--simple">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Thé à la menthe</h3>
+                <span class="menu-item__price">30 MAD</span>
+              </div>
+            </div>
+          </article>
+          <article class="menu-item menu-item--simple">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <h3>Café espresso</h3>
+                <span class="menu-item__price">25 MAD</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Addresses Footer -->
+  <footer class="addresses addresses--static">
+    <div class="addresses__inner">
+      <span class="addresses__tag">Retrouvez-nous</span>
+      <div class="addresses__list">
+        <div class="addresses__item">
+          <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          <span>20 Rue du Draa, Marrakech 40000</span>
+        </div>
+        <div class="addresses__item">
+          <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          <span>Bergensesteenweg 1043, 1070 Bruxelles, Belgium</span>
+        </div>
+      </div>
+      <span class="addresses__tag">Appelez-nous</span>
+      <div class="addresses__list">
+        <a href="tel:+212600000000" class="addresses__item addresses__item--link">
+          <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+          <span>+212 6 00 00 00 00 — Marrakech</span>
+        </a>
+        <a href="tel:+32000000000" class="addresses__item addresses__item--link">
+          <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+          <span>+32 0 000 00 00 — Bruxelles</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
