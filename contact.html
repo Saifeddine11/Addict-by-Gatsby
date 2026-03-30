@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Contact — Addict by Vivy. Horaires d'ouverture, adresses Marrakech & Bruxelles.">
+  <meta name="description" content="Contact — Addict by Gatsby. Horaires d'ouverture, adresses Marrakech & Bruxelles.">
   <meta name="theme-color" content="#0a0a0a">
   <title>Contact — Addict by Gatsby</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -103,7 +103,6 @@
     .hero {
       position: relative;
       width: 100%;
-      /* Account for navbar height */
       padding-top: 64px;
     }
 
@@ -121,7 +120,6 @@
       display: block;
     }
 
-    /* Dark gradient overlay bottom of hero */
     .hero__img-wrap::after {
       content: '';
       position: absolute;
@@ -134,7 +132,6 @@
       pointer-events: none;
     }
 
-    /* "CONTACT" label bottom-left of hero image */
     .hero__label {
       position: absolute;
       bottom: 16px;
@@ -292,6 +289,53 @@
       margin-top: 2px;
     }
 
+    /* ===================== APPELEZ-NOUS ===================== */
+    .phone {
+      padding: 32px 24px 16px;
+    }
+
+    .phone__tag {
+      display: block;
+      text-align: center;
+      font-family: 'Neue Montreal', 'Montserrat', sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 20px;
+    }
+
+    .phone__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .phone__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #b8b4ac;
+      font-family: 'Neue Montreal', 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .phone__item:hover {
+      color: #c9a96e;
+    }
+
+    .phone__icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      color: #c9a96e;
+    }
+
     /* ===================== FOOTER ===================== */
     .site-footer {
       margin-top: 40px;
@@ -325,7 +369,6 @@
 
     /* ===================== DESKTOP ===================== */
     @media (min-width: 769px) {
-      /* Navbar */
       .navbar {
         top: 24px;
         left: 50%;
@@ -337,10 +380,7 @@
         white-space: nowrap;
       }
 
-      .logo__img {
-        height: 48px;
-      }
-
+      .logo__img { height: 48px; }
       .navbar__btns { gap: 8px; }
 
       .pill-btn {
@@ -349,10 +389,7 @@
         padding: 12px 28px;
       }
 
-      /* Hero */
-      .hero {
-        padding-top: 120px;
-      }
+      .hero { padding-top: 120px; }
 
       .hero__img-wrap {
         aspect-ratio: 16 / 7;
@@ -366,33 +403,18 @@
         left: 40px;
       }
 
-      /* Horaires */
       .horaires {
         padding: 64px 0;
         max-width: 680px;
         margin: 0 auto;
       }
 
-      .horaires__title {
-        font-size: 10px;
-        letter-spacing: 4px;
-      }
+      .horaires__title { font-size: 10px; letter-spacing: 4px; }
 
-      .horaires__table td {
-        font-size: 13px;
-        padding: 13px 0;
-      }
+      .horaires__table td { font-size: 13px; padding: 13px 0; }
+      .horaires__table td:first-child { font-size: 11px; letter-spacing: 3px; }
+      .horaires__table td:last-child { font-size: 13px; }
 
-      .horaires__table td:first-child {
-        font-size: 11px;
-        letter-spacing: 3px;
-      }
-
-      .horaires__table td:last-child {
-        font-size: 13px;
-      }
-
-      /* Photo grid */
       .photo-grid {
         max-width: 1100px;
         margin: 0 auto;
@@ -400,11 +422,8 @@
         gap: 10px;
       }
 
-      .photo-grid__item {
-        aspect-ratio: 4 / 3;
-      }
+      .photo-grid__item { aspect-ratio: 4 / 3; }
 
-      /* Addresses */
       .addresses {
         max-width: 680px;
         margin: 0 auto;
@@ -428,20 +447,36 @@
         align-items: center;
       }
 
-      .addresses__pin {
-        width: 16px;
-        height: 16px;
-        margin-top: 0;
+      .addresses__pin { width: 16px; height: 16px; margin-top: 0; }
+
+      /* Phone desktop */
+      .phone {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 32px 0 24px;
       }
 
-      /* Footer */
-      .site-footer {
-        padding: 28px 40px 40px;
+      .phone__tag {
+        font-size: 10px;
+        letter-spacing: 4px;
+        margin-bottom: 28px;
       }
 
-      .site-footer__text {
-        font-size: 11px;
+      .phone__list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 48px;
       }
+
+      .phone__item {
+        font-size: 13px;
+        align-items: center;
+      }
+
+      .phone__icon { width: 16px; height: 16px; }
+
+      .site-footer { padding: 28px 40px 40px; }
+      .site-footer__text { font-size: 11px; }
     }
 
     @media (min-width: 1200px) {
@@ -451,9 +486,7 @@
         padding: 12px 12px 12px 44px;
       }
 
-      .logo__img {
-        height: 54px;
-      }
+      .logo__img { height: 54px; }
 
       .pill-btn {
         font-size: 12px;
@@ -461,13 +494,9 @@
         padding: 13px 32px;
       }
 
-      .hero__img-wrap {
-        max-height: 620px;
-      }
+      .hero__img-wrap { max-height: 620px; }
 
-      .horaires {
-        max-width: 760px;
-      }
+      .horaires { max-width: 760px; }
 
       .photo-grid {
         max-width: 1200px;
@@ -475,29 +504,25 @@
         gap: 12px;
       }
 
-      .addresses {
-        max-width: 760px;
-      }
+      .addresses { max-width: 760px; }
+      .addresses__list { gap: 72px; }
+      .addresses__item { font-size: 14px; }
 
-      .addresses__list {
-        gap: 72px;
-      }
-
-      .addresses__item {
-        font-size: 14px;
-      }
+      .phone { max-width: 760px; }
+      .phone__list { gap: 72px; }
+      .phone__item { font-size: 14px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== NAVBAR (same as index) ===== -->
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar" aria-label="Navigation principale">
-    <a href="index.html" class="logo" aria-label="Addict by Vivy - Accueil">
+    <a href="index.html" class="logo" aria-label="Addict by Gatsby - Accueil">
       <img src="assets/logo.png" alt="Addict by Gatsby" class="logo__img">
     </a>
     <div class="navbar__btns">
-      <a href="menu.html" class="pill-btn">Menu</a>
+      <a href="" class="pill-btn">Menu</a>
       <a href="contact.html" class="pill-btn">Contact</a>
     </div>
   </nav>
@@ -505,13 +530,9 @@
   <!-- ===== HERO IMAGE ===== -->
   <section class="hero">
     <div class="hero__img-wrap">
-      <!--
-        Replace src with your actual hero image.
-        Using a placeholder that matches the dark green lounge aesthetic.
-      -->
       <img
-        src="assets/contact/hero-contact.jpg"
-        alt="Ambiance lounge Addict by Vivy"
+        src="assets/lounge/gatsby5.webp"
+        alt="Ambiance lounge Addict by Gatsby"
         onerror="this.style.background='#1a2e23'; this.removeAttribute('src')"
       >
       <span class="hero__label">CONTACT</span>
@@ -528,30 +549,13 @@
 
     <table class="horaires__table" aria-label="Tableau des horaires d'ouverture">
       <tbody>
-        <tr>
-          <td>Lundi</td>
-          <td>17:00 – 22:30</td>
-        </tr>
-        <tr>
-          <td>Mardi</td>
-          <td>17:00 – 22:30</td>
-        </tr>
-        <tr>
-          <td>Mercredi</td>
-          <td>17:00 – 22:30</td>
-        </tr>
-        <tr>
-          <td>Jeudi</td>
-          <td>17:00 – 22:30</td>
-        </tr>
-        <tr>
-          <td>Vendredi</td>
-          <td>17:00 – 22:30</td>
-        </tr>
-        <tr>
-          <td>Sam &amp; Dim</td>
-          <td>17:00 – 22:30</td>
-        </tr>
+        <tr><td>Dimanche</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Lundi</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Mardi</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Mercredi</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Jeudi</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Vendredi</td><td>18:00 – 01:00</td></tr>
+        <tr><td>Samedi</td><td>18:00 – 01:00</td></tr>
       </tbody>
     </table>
   </section>
@@ -559,19 +563,19 @@
   <!-- ===== PHOTO GRID 2×2 ===== -->
   <section class="photo-grid" aria-label="Galerie photos">
     <div class="photo-grid__item">
-      <img src="assets/gallery/photo-1.jpg" alt="Cocktails et chicha Addict by Gatsby"
+      <img src="assets/lounge/gatsby1.webp" alt="Espace lounge Addict by Gatsby"
         onerror="this.style.background='#141f1a'; this.removeAttribute('src')">
     </div>
     <div class="photo-grid__item">
-      <img src="assets/gallery/photo-2.jpg" alt="Salon lounge Addict by Gatsby"
+      <img src="assets/lounge/gatsby2.webp" alt="Espace lounge Addict by Gatsby"
         onerror="this.style.background='#1a2e23'; this.removeAttribute('src')">
     </div>
     <div class="photo-grid__item">
-      <img src="assets/gallery/photo-3.jpg" alt="Façade Addict by Gatsby"
+      <img src="assets/lounge/gatsby3.webp" alt="Façade Addict by Gatsby"
         onerror="this.style.background='#0f1e16'; this.removeAttribute('src')">
     </div>
     <div class="photo-grid__item">
-      <img src="assets/gallery/photo-4.jpg" alt="Chichas et cocktails Addict by Gatsby"
+      <img src="assets/lounge/gatsby4.webp" alt="Chichas et cocktails Addict by Gatsby"
         onerror="this.style.background='#162418'; this.removeAttribute('src')">
     </div>
   </section>
@@ -601,6 +605,19 @@
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
         </svg>
         <span>Bergensesteenweg 1043, 1070 Bruxelles, Belgium</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== APPELEZ-NOUS ===== -->
+  <section class="phone" aria-label="Numéros de téléphone">
+    <span class="phone__tag">Appelez-nous</span>
+    <div class="phone__list">
+      <a href="tel:+212600642015" class="phone__item">
+        <svg class="phone__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
+        </svg>
+        <span>+212 600-642015</span>
       </a>
     </div>
   </section>

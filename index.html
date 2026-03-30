@@ -171,22 +171,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: rgba(0,0,0,0.30);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255,255,255,0.07);
       border-radius: 18px;
-      padding: 14px 24px;
+      padding: 12px 20px;
       width: 100%;
-    }
-
-    .addresses__row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: center;
     }
 
     .addresses__tag {
@@ -197,12 +189,11 @@
       text-transform: uppercase;
       color: #c9a96e;
       white-space: nowrap;
-      flex-shrink: 0;
     }
 
     .addresses__sep {
       width: 1px;
-      height: 14px;
+      height: 12px;
       background: rgba(201,169,110,0.2);
       flex-shrink: 0;
     }
@@ -210,10 +201,10 @@
     .addresses__item {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       color: #d4d0c8;
       font-family: 'Neue Montreal', 'Montserrat', sans-serif;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 300;
       text-decoration: none;
       transition: color 0.25s ease;
@@ -223,17 +214,26 @@
     .addresses__item:hover { color: #c9a96e; }
 
     .addresses__pin {
-      width: 12px;
-      height: 12px;
+      width: 11px;
+      height: 11px;
       flex-shrink: 0;
       color: #c9a96e;
     }
 
+    /* chaque ligne = un flex row centré */
+    .addresses__row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+    }
+
+    /* séparateur horizontal entre les deux blocs */
     .addresses__hr {
       width: 100%;
       height: 1px;
       background: rgba(255,255,255,0.05);
-      margin: 2px 0;
     }
 
     .addresses__block-sep { display: none; }
@@ -248,10 +248,11 @@
         padding: 14px 36px;
         width: auto;
         max-width: calc(100% - 80px);
+        align-items: center;
       }
       .addresses__row {
         gap: 14px;
-        flex-wrap: nowrap;
+        width: auto;
       }
       .addresses__hr { display: none; }
       .addresses__block-sep {
@@ -265,6 +266,7 @@
       .addresses__tag { font-size: 9px; }
       .addresses__item { font-size: 13px; }
       .addresses__pin { width: 14px; height: 14px; }
+      .addresses__sep { display: block; }
     }
 
     @media (min-width: 1200px) {
@@ -287,7 +289,7 @@
       <img src="assets/logo.png" alt="Addict by Gatsby" class="logo__img">
     </a>
     <div class="navbar__btns">
-      <a href="menu.html" class="pill-btn">Menu</a>
+      <a href="" class="pill-btn">Menu</a>
       <a href="contact.html" class="pill-btn">Contact</a>
     </div>
   </nav>
@@ -295,14 +297,21 @@
   <footer class="addresses" aria-label="Coordonnées">
     <div class="addresses__inner">
 
+      <!-- Ligne 1 : Retrouvez-nous -->
       <div class="addresses__row">
         <span class="addresses__tag">Retrouvez-nous</span>
-        <span class="addresses__sep"></span>
+      </div>
+
+      <!-- Ligne 2 : Marrakech -->
+      <div class="addresses__row">
         <a href="https://share.google/qWhBTL5qUBefdlAeS" target="_blank" rel="noopener noreferrer" class="addresses__item">
           <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
           20 Rue du Draa, Marrakech
         </a>
-        <span class="addresses__sep"></span>
+      </div>
+
+      <!-- Ligne 3 : Bruxelles -->
+      <div class="addresses__row">
         <a href="https://share.google/WyHYLQEnB3jolGHPx" target="_blank" rel="noopener noreferrer" class="addresses__item">
           <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
           Bergensesteenweg 1043, Bruxelles
@@ -312,9 +321,13 @@
       <div class="addresses__hr"></div>
       <div class="addresses__block-sep"></div>
 
+      <!-- Ligne 4 : Appelez-nous -->
       <div class="addresses__row">
-        <span class="addresses__tag">Appelez-nous</span> 
-        <span class="addresses__sep"></span>
+        <span class="addresses__tag">Appelez-nous</span>
+      </div>
+
+      <!-- Ligne 5 : numéro -->
+      <div class="addresses__row">
         <a href="tel:+212600642015" class="addresses__item">
           <svg class="addresses__pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
           +212 600-642015
